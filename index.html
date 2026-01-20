@@ -1,11 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlvoradaSMP - Loja Oficial</title>
-    <link rel="stylesheet" href="custom.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -773,8 +772,6 @@
 </head>
 <body>
     <div class="floating-elements" id="floatingElements"></div>
-
-    <script src="main.js"></script>
     
     <!-- Modal de Compra -->
     <div class="modal-overlay" id="purchaseModal">
@@ -855,10 +852,10 @@
                 </div>
                 <div class="server-status">
                     <span class="status-dot"></span>
-                    <span>Online • 47 jogadores</span>
+                    <span>• Survival • 1.20.x - 1.21.x</span>
                 </div>
                 <a href="https://discord.gg/Uh9bXpmTtk" target="_blank" class="discord-btn">
-                    <i class="fab fa-discord"></i> Discord
+                    <i class="fab fa-discord"></i> Junta-te ao Discord
                 </a>
             </div>
         </header>
@@ -882,7 +879,6 @@
         <section id="vips" class="section active">
             <div class="section-title">
                 <h2>Pacotes VIP</h2>
-                <p style="margin-top: 15px; color: #d1e3ff;">Desbloqueia vantagens exclusivas no servidor</p>
             </div>
             
             <div class="cards-grid">
@@ -1118,7 +1114,10 @@
                             </button>
                         </div>
                         <p style="color: #d1e3ff; margin-top: 15px;">
-                            <i class="fas fa-plug"></i> Versões suportadas: 1.21x
+                            <i class="fas fa-plug"></i> Versões suportadas: 1.20.x - 1.21.x
+                        </p>
+                        <p style="color: #d1e3ff; margin-top: 10px;">
+                            <i class="fas fa-gamepad"></i> Modo: Survival
                         </p>
                     </div>
                 </div>
@@ -1131,7 +1130,7 @@
                     <p>Junta-te à nossa comunidade no Discord</p>
                     <div style="text-align: center; margin-top: 30px;">
                         <a href="https://discord.gg/Uh9bXpmTtk" target="_blank" class="discord-link" style="display: inline-block; margin-bottom: 20px;">
-                            <i class="fab fa-discord"></i> Entrar no Discord
+                            <i class="fab fa-discord"></i> Junta-te ao Discord
                         </a>
                         <ul class="features-list">
                             <li>Anúncios importantes</li>
@@ -1180,14 +1179,16 @@
 
         <footer>
             <div class="footer-logo">AlvoradaSMP</div>
-            <p>© 2023 AlvoradaSMP - Todos os direitos reservados</p>
+            <p>© 2025 AlvoradaSMP - Todos os direitos reservados</p>
             <p>Este servidor não é afiliado à Mojang Studios. Minecraft é uma marca registada da Mojang Studios.</p>
             <div style="margin-top: 20px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
                 <div>
                     <p><i class="fas fa-server" style="margin-right: 10px;"></i> IP: <span class="highlight">alvoradasmp.ggwp.cc</span></p>
+                    <p><i class="fas fa-plug" style="margin-right: 10px;"></i> Versão: <span class="highlight">1.20.x - 1.21.x</span></p>
                 </div>
                 <div>
                     <p><i class="fab fa-discord" style="margin-right: 10px;"></i> Discord: <a href="https://discord.gg/Uh9bXpmTtk" target="_blank" style="color: var(--light); text-decoration: none;">discord.gg/Uh9bXpmTtk</a></p>
+                    <p><i class="fas fa-gamepad" style="margin-right: 10px;"></i> Modo: <span class="highlight">Survival</span></p>
                 </div>
             </div>
             <p style="margin-top: 10px; font-size: 0.9rem;">
@@ -1473,7 +1474,7 @@
         function updateServerStatus() {
             const players = Math.floor(Math.random() * 30) + 20;
             const statusElement = document.querySelector('.server-status span:nth-child(2)');
-            statusElement.textContent = `Online • ${players} jogadores`;
+            statusElement.textContent = ' Survival • 1.20.x - 1.21.x';
         }
 
         // Atualizar status a cada 30 segundos
@@ -1481,5 +1482,4 @@
         updateServerStatus(); // Executar uma vez no início
     </script>
 </body>
-
 </html>
